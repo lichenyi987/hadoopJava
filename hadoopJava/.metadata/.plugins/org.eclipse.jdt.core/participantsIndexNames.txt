@@ -1,0 +1,3 @@
+INDEX VERSION 1.130
+D:\code\hadoopJava\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\4233141273.index
+\20191018\src

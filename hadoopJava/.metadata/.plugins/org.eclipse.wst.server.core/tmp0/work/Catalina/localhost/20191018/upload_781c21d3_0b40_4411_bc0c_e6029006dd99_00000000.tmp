@@ -1,0 +1,33 @@
+import scipy.io as scio
+import gc
+import numpy as np
+
+all_data = 40
+
+data = scio.loadmat('/mnt/external/superlee/dataset/DEAP_dataset/data_preprocessed_matlab/s31.mat')
+
+# datas = data['data']
+
+# datas = np.array(datas).reshape(40,40,63,128)
+
+# print(datas.shape)
+
+temp = [0]*63
+re2_data = []
+
+for i in range(all_data):
+    for j in range(63):
+        temp[j] = datas[i][:,j,:]
+        temp[j] = np.array(temp[j]).reshape(-1)
+    re_data[i] = temp       
+    re2_data.append(temp)
+    
+# re_data[0] = np.array(re_data[0])
+
+# print(re_data[0].shape)   
+
+re2_data = np.array(re2_data)
+print(re2_data.shape)
+
+
+    
